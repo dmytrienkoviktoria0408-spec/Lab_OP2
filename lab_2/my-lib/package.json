@@ -1,0 +1,7 @@
+{
+  "name": "my-generator-lib",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Viktoriia Dmytrienko",
+  "license": "MIT"
+}
