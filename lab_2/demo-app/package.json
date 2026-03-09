@@ -1,0 +1,12 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Project to demonstrate library usage",
+  "main": "main.js",
+  "dependencies": {
+    "my-generator-lib": "file:../my-lib"
+  },
+  "author": "Viktoriia Dmytrienko",
+  "license": "MIT"
+}
