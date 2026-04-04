@@ -1,0 +1,14 @@
+{
+  "name": "lab_3",
+  "version": "1.0.0",
+  "description": "laboratory work №3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Viktoria Dmytrienko",
+  "license": "ISC",
+  "type": "commonjs"
+}
