@@ -6,3 +6,22 @@ async function* largeDataSource(limit) {
     yield i;
   }
 }
+
+const processStream = async (dataIterator, transformer) => {
+  console.log("[Stream] Початок обробки...");
+  let count = 0;
+
+  for await (const chunk of dataIterator) {
+    const processed = transformer(chunk);
+    
+    // Виводимо прогрес кожні 1000 елементів, щоб не засмічувати консоль
+    if (count % 1000 === 0) {
+      console.log(`[Batch] Оброблено елементів: ${count}, Поточне значення: ${processed}`);
+    }
+    count++;
+  }
+
+  console.log(`[Stream] Готово! Всього оброблено: ${count}`);
+};
+
+module.exports = { largeDataSource, processStream };
